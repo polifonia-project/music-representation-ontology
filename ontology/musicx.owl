@@ -16,6 +16,127 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/describes -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/describes">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Fragment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasAnnotationContent -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasAnnotationContent">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotationContent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasAnnotationType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasAnnotationType">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasAnnotator -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasAnnotator">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasAnnotatorType -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasAnnotatorType">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotatorType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasFeatures -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasFeatures">
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AudioFeatures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasFragment -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasFragment">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicContent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Fragment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/hasSubject -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/hasSubject">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotationContent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicNotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/isAnalyisedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/isAnalyisedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicContent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Analysis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/isAnnotatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/isAnnotatedIn">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Analysis"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicContent"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/isBasedOn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/isBasedOn">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Analysis"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnalyticalReference"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/Annotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-annotation/isComposedOf">
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicNotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/MusicNotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -265,6 +386,41 @@
     <!-- https://w3id.org/polifonia/ontology/music-annotation/Tonic -->
 
     <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-annotation/Tonic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/ComputerAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-annotation/ComputerAlgorithm">
+        <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotatorType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/Crowd -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-annotation/Crowd">
+        <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotatorType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-annotation/ExpertAnnotator -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-annotation/ExpertAnnotator">
+        <rdf:type rdf:resource="https://w3id.org/polifonia/ontology/music-annotation/AnnotatorType"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
