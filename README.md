@@ -1,2 +1,2 @@
-# Music Annotation Ontology
-Ontology for modelling music annotations and notation elements.
+# Music Representation Ontology
+Ontology for modelling music representatioon.
