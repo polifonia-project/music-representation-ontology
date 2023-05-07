@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"
+     xml:base="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
+        <cc:license rdf:resource="http://opendatacommons.org/licenses/by/"/>
+        <cc:license rdf:resource="http://www.data.gouv.fr/Licence-Ouverte-Open-Licence"/>
+        <dc:contributor rdf:resource="http://chewbii.com"/>
+        <dc:contributor rdf:resource="http://deptinfo.cnam.fr/~rigaux/"/>
+        <dc:contributor rdf:resource="https://people.irisa.fr/Virginie.Thion"/>
+        <dc:creator rdf:resource="http://cedric.cnam.fr/~hamdif"/>
+        <dc:creator rdf:resource="http://cedric.cnam.fr/~sisaid"/>
+        <dc:description xml:lang="en">Music Notation Ontology.</dc:description>
+        <dc:description xml:lang="fr">Ontologie de la notation musicale.</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-03</dc:issued>
+        <dc:publisher rdf:resource="http://fr.dbpedia.org/resource/Conservatoire_national_des_arts_et_métiers"/>
+        <dc:rights>Copyright 2016, CNAM</dc:rights>
+        <dc:title xml:lang="en">Music Notation Ontology</dc:title>
+        <vann:preferredNamespacePrefix>MusicNote</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"/>
+        <owl:versionInfo>Version 1.0 - 2016-11-03</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#contains -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part"/>
+                    <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#containsSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#containsSyllable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Word"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasEvent -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasMeasure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasNote -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Chord"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasSyllable -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasSyllable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsEvent"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasVoice -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasVoice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#slursEvent -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#slursEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Slur"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#tiesEvent -->
+
+    <owl:ObjectProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#tiesEvent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Tie"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasAlt -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasAlt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasComposer -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasComposer">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasCount -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasCount">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasOctave -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasOctave">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPitch -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPitch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPublished -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasPublished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#isPartial -->
+
+    <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#isPartial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Chord -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Chord">
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasNote"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chord</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsEvent -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsEvent">
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+        <rdfs:label xml:lang="en">Lyrics Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsVoice -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsVoice">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasEvent"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsEvent"/>
+                            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#RestEvent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice"/>
+        <rdfs:label xml:lang="en">Lyrics Voice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure">
+        <rdfs:label xml:lang="en">Measure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsEvent"/>
+            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#RestEvent"/>
+            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+        </owl:disjointUnionOf>
+        <rdfs:label xml:lang="en">Music Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Note">
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+        <rdfs:label xml:lang="en">Note</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part">
+        <rdfs:label xml:lang="en">Part</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#RestEvent -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#RestEvent">
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+        <rdfs:label xml:lang="en">Rest Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score">
+        <rdfs:label xml:lang="en">Score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Slur -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Slur">
+        <rdfs:label xml:lang="en">Slur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent">
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent"/>
+        <rdfs:label xml:lang="en">Sound Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundVoice -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundVoice">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasEvent"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#RestEvent"/>
+                            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundEvent"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice"/>
+        <rdfs:label xml:lang="en">Sound Voice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable">
+        <rdfs:label xml:lang="en">Syllable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Tie -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Tie">
+        <rdfs:label xml:lang="en">Tie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#LyricsVoice"/>
+            <rdf:Description rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#SoundVoice"/>
+        </owl:disjointUnionOf>
+        <rdfs:label xml:lang="en">Voice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Word -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Word">
+        <rdfs:label xml:lang="en">Word</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
