@@ -63,7 +63,7 @@
     <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasMusicAnnotation -->
 
     <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasMusicAnnotation">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn"/>
+        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
     </rdf:Description>
     
 
@@ -151,7 +151,7 @@
     <!-- http://w3id.org/polifonia/ontology/jams/isJAMSAnnotationOf -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isJAMSAnnotationOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
     </owl:ObjectProperty>
     
 
@@ -183,6 +183,26 @@
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
         <rdfs:comment xml:lang="en">The relation between an annotation and the fragment it is describing.</rdfs:comment>
         <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/polifonia/ontology/music-representation/hasAnnotation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation">
+        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes"/>
+        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
+                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
+        <rdfs:comment xml:lang="en">A direct relationship between a music content and an annotation. Some specific content (e.g. elements of a score) might be annotated without the need of an analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">has annotation</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -310,26 +330,6 @@
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
         <rdfs:comment xml:lang="en">The relantionship that identifies the specific music content modeled by an analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">is analysis of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn">
-        <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/descriptionandsituation.owl#describes"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationOf"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
-                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
-        <rdfs:comment xml:lang="en">A direct relationship between a music content and an annotation. Some specific content (e.g. elements of a score) might be annotated without the need of an analysis.</rdfs:comment>
-        <rdfs:label xml:lang="en">is annotated in</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -794,7 +794,7 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
@@ -802,7 +802,7 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
                     <owl:Restriction>
                         <owl:onProperty>
                             <rdf:Description>
-                                <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn"/>
+                                <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
                             </rdf:Description>
                         </owl:onProperty>
                         <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
@@ -936,6 +936,12 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
     <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicContent">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasFragment"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
             </owl:Restriction>
@@ -944,12 +950,6 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnalyisedIn"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatedIn"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -1066,8 +1066,8 @@ For example an music notation is a chord or a note.</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence">
-        <rdfs:label xml:lang="en">has confidence</rdfs:label>
         <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">has confidence</rdfs:label>
     </rdf:Description>
     
 
