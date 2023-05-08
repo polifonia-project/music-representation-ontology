@@ -285,7 +285,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasSubject">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/informationrealization.owl#realizes"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotationContent"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
         <rdfs:comment xml:lang="en">The relation that identifies a subject of interest in an annotation content.</rdfs:comment>
         <rdfs:label xml:lang="en">has subject</rdfs:label>
     </owl:ObjectProperty>
@@ -415,8 +415,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isComposedOf">
         <rdfs:subPropertyOf rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/partof.owl#hasPart"/>
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
         <rdfs:comment xml:lang="en">Part-of relationship between two music notation entities. 
 E.g. a chord is composed of pitchclasses.</rdfs:comment>
         <rdfs:label xml:lang="en">is composed of</rdfs:label>
@@ -498,7 +498,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Measure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -506,7 +506,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#MusicEvent">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -530,7 +530,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Slur -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Slur">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -538,7 +538,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Syllable">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -546,7 +546,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Tie -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Tie">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -562,7 +562,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Word -->
 
     <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Word">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -570,7 +570,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Accidental -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Accidental">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -578,7 +578,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Articulation -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Articulation">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -586,7 +586,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Clef -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Clef">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -594,7 +594,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Duration -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Duration">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -602,7 +602,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#DurationAttribute -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#DurationAttribute">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -610,7 +610,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Dynamic -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Dynamic">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -626,7 +626,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#InterpretationMarking -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#InterpretationMarking">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -634,7 +634,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Measure -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Measure">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -642,7 +642,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#NoteAttribute -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#NoteAttribute">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -650,7 +650,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#NoteLink -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#NoteLink">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -658,7 +658,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#NoteSet -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#NoteSet">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -666,7 +666,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Repeat -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Repeat">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -674,7 +674,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Staff -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Staff">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -682,7 +682,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#TempoMarking -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#TempoMarking">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -690,7 +690,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#TimeSignature -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#TimeSignature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -698,7 +698,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Tuplet -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Tuplet">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -706,7 +706,7 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Voice -->
 
     <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Voice">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
     </owl:Class>
     
 
@@ -872,14 +872,14 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasSubject"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasSubject"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+                <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The content of an annotation is the projection of the musical content it is describing.</rdfs:comment>
@@ -963,19 +963,19 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/polifonia/ontology/music-representation/MusicNotation -->
+    <!-- https://w3id.org/polifonia/ontology/music-representation/MusicProjection -->
 
-    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicNotation">
+    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicProjection">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isComposedOf"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicNotation"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicProjection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Music notation is the subject of an annotation content.
+        <rdfs:comment xml:lang="en">A music projection is the subject of an annotation content.
 
-For example an music notation is a chord or a note.</rdfs:comment>
-        <rdfs:label xml:lang="en">Music notation</rdfs:label>
+E.g. a chord.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music projection</rdfs:label>
     </owl:Class>
     
 
