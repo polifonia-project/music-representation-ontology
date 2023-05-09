@@ -29,6 +29,18 @@
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/0.1/"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/music-meta/1.0/"/>
+        <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
+        <terms:creator xml:lang="en">Nicolas Lazzari</terms:creator>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <rdfs:comment xml:lang="en">The Music Representation Ontology provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
+Fragments of a musical object -- elements of a musical object whose temporal location is uniquely identifiable -- are described by an annotation provided by an agent, that ranges from an expert annotator to an algorithm.
+An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
+Each annotation describes some music content (e.g. notes, chords, etc.), a musical projection, and can be composed hierarchically. The Music Representation Ontology reuses the Music Annotation Pattern ODP to implement an annotation.
+
+The generality of this ontology and its abstraction over the represented content enables the interoperability of different music annotation schemas. The module is aligned to MusicOWL, Music Notation Ontology, JAMS ontology and Music Note Ontology.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">Polifonia Ontology Network</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Music Representation Ontology</rdfs:label>
+        <owl:versionInfo xml:lang="en">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -41,38 +53,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasAnnotator -->
-
-    <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasAnnotator">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotator"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasAnnotatorType -->
-
-    <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasAnnotatorType">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotatorType"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasMusicAnnotation -->
-
-    <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasMusicAnnotation">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasValue -->
-
-    <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasValue">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasSubject"/>
-    </rdf:Description>
     
 
 
@@ -255,15 +235,6 @@
         <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotatorType"/>
         <rdfs:comment xml:lang="en">The type of an annotator (e.g. domain expert)</rdfs:comment>
         <rdfs:label xml:lang="en">has annotator type</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/polifonia/ontology/music-representation/hasFeatures -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasFeatures">
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Recording"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AudioFeatures"/>
     </owl:ObjectProperty>
     
 
@@ -452,20 +423,6 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     <owl:DatatypeProperty rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#hasTitle">
         <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/core/title"/>
     </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasName -->
-
-    <rdf:Description rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasName">
-        <owl:equivalentProperty rdf:resource="https://w3id.org/polifonia/ontology/core/name"/>
-    </rdf:Description>
-    
-
-
-    <!-- https://w3id.org/polifonia/ontology/core/name -->
-
-    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/core/name"/>
     
 
 
@@ -906,12 +863,6 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/polifonia/ontology/music-representation/AudioFeatures -->
-
-    <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/AudioFeatures"/>
-    
-
-
     <!-- https://w3id.org/polifonia/ontology/music-representation/Fragment -->
 
     <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/Fragment">
@@ -952,11 +903,6 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/AbstractScore"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/Score"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/AudioFeatures"/>
-        </owl:disjointUnionOf>
         <rdfs:comment xml:lang="en">Music content represents a musical piece that can be analysed by means of an analytical process.</rdfs:comment>
         <rdfs:label xml:lang="en">Music content</rdfs:label>
     </owl:Class>
@@ -1066,34 +1012,8 @@ E.g. a chord.</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence">
-        <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">has confidence</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotationContent"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotationType"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotator"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotatorType"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasFeatures"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasTemporalLocation"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnalyisedIn"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnalysisOf"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnnotationContentOf"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnnotatorOf"/>
-        </owl:members>
+        <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

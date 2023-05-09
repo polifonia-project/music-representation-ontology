@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://w3id.org/polifonia/ontology/jams/0.1/" uri="https://raw.githubusercontent.com/polifonia-project/jams-ontology/main/jams.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/andreapoltronieri/music-annotation-pattern/0.1/" uri="https://purl.org/andreapoltronieri/music-notation-pattern"/>
+    <uri id="Imports Wizard Entry" name="https://purl.org/andreapoltronieri/notepattern/" uri="https://raw.githubusercontent.com/andreamust/music_note_pattern/main/notepattern.owl"/>
+    <uri id="Imports Wizard Entry" name="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#" uri="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="http://www.w3.org/2004/02/skos/core#"/>
+    <uri id="Imports Wizard Entry" name="http://linkeddata.uni-muenster.de/ontology/musicscore#1.0.0" uri="mso.owl"/>
+    <uri id="Imports Wizard Entry" name="http://linkedu.eu/dedalo/explanationPattern.owl" uri="https://raw.githubusercontent.com/kmitd/various/master/explanation-ontology.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/polifonia/ontology/music-meta/1.0/" uri="musicmeta.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ontology/mto/0.9" uri="https://raw.githubusercontent.com/tetherless-world/MusicTheory/master/ont/mto.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ontology/mto/0.9" uri="mto.ttl"/>
     <uri id="Imports Wizard Entry" name="https://w3id.org/polifonia/ontology/core/0.1/" uri="https://w3id.org/polifonia/ontology/core/"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1683000212764" name="https://w3id.org/polifonia/ontology/music-annotation/" uri="musicx.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683620223612" name="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl" uri="music_note_refactor.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683620223612" name="http://linkeddata.uni-muenster.de/ontology/musicscore#" uri="mso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683620223612" name="https://w3id.org/polifonia/ontology/music-meta/" uri="musicmeta.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1683620223612" name="https://w3id.org/polifonia/ontology/music-representation/" uri="musicrepresentation.owl"/>
     </group>
 </catalog>
