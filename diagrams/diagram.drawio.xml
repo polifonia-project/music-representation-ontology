@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2023-05-09T08:32:11.772Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/110.0" etag="F7rV4b2JrhaAh6KJkU-9" version="21.2.9" type="google" pages="2">
+  <diagram id="hgqw0YGXyfiPENmvtL8X" name="annotation">
+    <mxGraphModel dx="1499" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-3" value="owl:unionOf" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-4" target="ky1WvbZLZRhBRrCRSTKN-53" edge="1">
+          <mxGeometry x="-0.0127" y="-1" relative="1" as="geometry">
+            <mxPoint x="368" y="44" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="292" y="180" />
+              <mxPoint x="292" y="180" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-4" value="mr:MusicContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="299.5" y="160" width="136" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-6" value="mr:Annotation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="602" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-9" value="Prefixes" style="graphMlID=n0;shape=swimlane;startSize=20;fillColor=#b7b69e;strokeColor=#000000;strokeWidth=1.0;align=right;spacingRight=10;fontStyle=1;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="510" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-10" value="&lt;font style=&quot;font-weight: bold;&quot; face=&quot;Courier New&quot;&gt;rdfs:&lt;br&gt;core:&lt;br&gt;mm:&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot;&gt;mr:&lt;br&gt;map:&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;" parent="ky1WvbZLZRhBRrCRSTKN-9" vertex="1">
+          <mxGeometry x="9.996452437349733" y="14.99953721049043" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-11" value="&lt;font face=&quot;Courier New&quot;&gt;http://www.w3.org/2000/01/rdf-schema#&lt;br&gt;https://w3id.org/polifonia/ontology/core/&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; background-color: initial;&quot;&gt;https://w3id.org/polifonia/ontology/music-meta/&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;https://w3id.org/polifonia/ontology/music-representation/&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;Courier New&quot;&gt;https://purl.org/andreapoltronieri/music-notation-pattern&lt;/font&gt;/&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;fontFamily=Helvetica;" parent="ky1WvbZLZRhBRrCRSTKN-9" vertex="1">
+          <mxGeometry x="69.99645243734975" y="14.99953721049043" width="440" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-12" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-4" target="ky1WvbZLZRhBRrCRSTKN-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="528" y="120" as="sourcePoint" />
+            <mxPoint x="478" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-13" value="&lt;span style=&quot;font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasFragment&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;rotation=0;fontColor=#000080;" parent="ky1WvbZLZRhBRrCRSTKN-12" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-14" value="mr:Fragment" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="602" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-15" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-4" target="ky1WvbZLZRhBRrCRSTKN-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="488" y="575" as="sourcePoint" />
+            <mxPoint x="418" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-16" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotation&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-15" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-18" value="mr:Analysis" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="308" y="250" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-19" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-18" target="ky1WvbZLZRhBRrCRSTKN-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="65" as="sourcePoint" />
+            <mxPoint x="688" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-20" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotation&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-19" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-21" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-4" target="ky1WvbZLZRhBRrCRSTKN-18" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="428" y="580" as="sourcePoint" />
+            <mxPoint x="428" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-22" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isAnalysedIn&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-21" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-23" value="core:Agent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="492" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-24" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-6" target="ky1WvbZLZRhBRrCRSTKN-23" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="622" y="300" as="sourcePoint" />
+            <mxPoint x="688" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-25" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotator&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-24" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-31" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-26" value="mr:AnnotatorType" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="477" y="450" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-27" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-23" target="ky1WvbZLZRhBRrCRSTKN-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1088" y="370" as="sourcePoint" />
+            <mxPoint x="1038" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="552" y="450" />
+              <mxPoint x="552" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-28" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotatorType&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-27" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="6" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-29" value="mr:AnnotationType" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="745.5" y="160" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-30" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-6" target="ky1WvbZLZRhBRrCRSTKN-29" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="718" y="230" as="sourcePoint" />
+            <mxPoint x="688" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="822" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-31" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotationType&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-30" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="-30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-32" value="map:MusicTimeInterval" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="579" y="70" width="166" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-33" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-14" target="ky1WvbZLZRhBRrCRSTKN-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="738" y="480" as="sourcePoint" />
+            <mxPoint x="708" y="510" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-34" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasTemporalLocation&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;rotation=0;" parent="ky1WvbZLZRhBRrCRSTKN-33" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-35" value="mr:AnnotationContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="662" y="350" width="166.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-36" value="mr:MusicProjection" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="676.75" y="450" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-37" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-35" target="ky1WvbZLZRhBRrCRSTKN-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1068" y="620" as="sourcePoint" />
+            <mxPoint x="1038" y="650" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-38" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasSubject&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-37" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-39" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-6" target="ky1WvbZLZRhBRrCRSTKN-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="748" y="360" as="sourcePoint" />
+            <mxPoint x="958" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-40" value="mr:describes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;fontColor=#000080;" parent="ky1WvbZLZRhBRrCRSTKN-39" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-43" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-6" target="ky1WvbZLZRhBRrCRSTKN-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="748" y="280" as="sourcePoint" />
+            <mxPoint x="958" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-44" value="mr:hasAnnotationContent" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;fontColor=#000080;" parent="ky1WvbZLZRhBRrCRSTKN-43" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-45" value="mr:AnalyticalReference" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="283" y="350" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-46" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-18" target="ky1WvbZLZRhBRrCRSTKN-45" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="162" y="310" as="sourcePoint" />
+            <mxPoint x="162" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="368" y="310" />
+              <mxPoint x="368" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-47" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isBasedOn&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-46" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-48" value="rdfs:Literal" style="graphMlID=n6;shape=parallelogram;fillColor=#B0FFBA;strokeColor=#000000;strokeWidth=1.0;fontSize=14;rounded=1;shadow=1;" parent="1" vertex="1">
+          <mxGeometry x="40.00000000000006" y="250" width="136.09" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-49" value="" style="graphMlID=e6;rounded=0;endArrow=block;strokeColor=#008000;dashed=1;dashPattern=1 1;strokeWidth=1.0;startArrow=oval;startFill=0;endFill=0;fontSize=13;edgeStyle=orthogonalEdgeStyle;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-18" target="ky1WvbZLZRhBRrCRSTKN-48" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="352" y="270" />
+              <mxPoint x="352" y="270" />
+            </Array>
+            <mxPoint x="235.5" y="526" as="sourcePoint" />
+            <mxPoint x="345.5" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-50" value="mr:hasConfidence" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=13;fontColor=#008000;" parent="ky1WvbZLZRhBRrCRSTKN-49" connectable="0" vertex="1">
+          <mxGeometry x="-0.087" y="3" relative="1" as="geometry">
+            <mxPoint x="-2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-53" value="mm:AbstractScore&#xa;mm:Score" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFFF9E;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="160" width="161" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-57" value="mr:ExpertAnnotator" style="graphMlID=n9;shape=ellipse;fillColor=#ff99cc;strokeColor=#000000;strokeWidth=3.0;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;align=left;spacingRight=1;spacing=17;rotation=0;fontSize=15;movableLabel=1;" parent="1" vertex="1">
+          <mxGeometry x="372" y="430" width="20" height="20" as="geometry">
+            <mxPoint x="-181" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-58" value="rdf:type" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-59" target="ky1WvbZLZRhBRrCRSTKN-26" edge="1">
+          <mxGeometry x="-0.0588" relative="1" as="geometry">
+            <mxPoint x="512" y="560" as="sourcePoint" />
+            <mxPoint x="562.01" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="392" y="470" />
+              <mxPoint x="392" y="470" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-59" value="mr:Crowd" style="graphMlID=n9;shape=ellipse;fillColor=#ff99cc;strokeColor=#000000;strokeWidth=3.0;verticalAlign=middle;labelPosition=right;verticalLabelPosition=middle;align=left;spacingRight=1;spacing=17;rotation=0;direction=west;fontSize=15;connectable=1;movableLabel=1;" parent="1" vertex="1">
+          <mxGeometry x="372" y="460" width="20" height="20" as="geometry">
+            <mxPoint x="-114" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-61" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;curved=1;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-36" target="ky1WvbZLZRhBRrCRSTKN-36" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="755" y="400" as="sourcePoint" />
+            <mxPoint x="755" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="782" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-62" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isComposedOf&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-61" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-63" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;curved=1;" parent="1" source="ky1WvbZLZRhBRrCRSTKN-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="270" as="sourcePoint" />
+            <mxPoint x="722" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="802" y="270" />
+              <mxPoint x="802" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ky1WvbZLZRhBRrCRSTKN-64" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:derivesFrom&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" parent="ky1WvbZLZRhBRrCRSTKN-63" connectable="0" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HOwQjd63PvnOwDSBOWSu" name="odps">
+    <mxGraphModel dx="1675" dy="872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-1" value="&lt;b&gt;Description&amp;amp;Situation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation + http://ontologydesignpatterns.org/wiki/Submissions:ExplanationODP&lt;br style=&quot;font-size: 9px;&quot;&gt;Annotation is the Situation. It describes the AnnotationContent. &lt;br&gt;isBasedOf is not a PartOf relation (not transitive)!&amp;nbsp; It is an Explanation ODP where the an annotation is explained by (based on) another annotation (ex: An annotation that specifies the Roman numeral is based on an annotation on the Key and an annotation on the Surface chord)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1540" width="770" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-2" value="&lt;b&gt;PartOf ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:PartOf&lt;br style=&quot;font-size: 9px;&quot;&gt;A MusicNotation object might be composed by another MusicNotation object (i.e. a Chord is composed of PitchClass - A progressions is composed of Chords - A note is composed of PitchClass and Duration)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1230" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-3" value="&lt;b&gt;TimeIndexedSituation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:TimeIndexedSituation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1700" width="530" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-4" value="&lt;b&gt;PartOf ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:PartOf&lt;br style=&quot;font-size: 9px;&quot;&gt;Fragment is part of a Music Content" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1110" width="440" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-5" value="&lt;b&gt;Description&amp;amp;Situation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation&lt;br style=&quot;font-size: 9px;&quot;&gt;Annotation describes MusicContent&lt;br&gt;Differs from Analysis -&amp;gt; Annotation since some MusicContent might be inherently original and hence does not need an analysis (e.g. the key of a score directly written by the author)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1400" width="440" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-6" value="&lt;b&gt;Description&amp;amp;Situation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:DescriptionAndSituation&lt;br style=&quot;font-size: 9px;&quot;&gt;Annotation describes an Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="990" width="440" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-7" value="&lt;b&gt;Information realisation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:Information_realization&lt;br style=&quot;font-size: 9px;&quot;&gt;MusicNotation realises AnnotationContent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="870" width="470" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-8" value="mr:AnnotationContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="301.75" y="885" width="166.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-9" value="mr:MusicProjection" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="601" y="885" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-10" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-8" target="0VjdX6la4yjrqGu_LaWB-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="707.75" y="1155" as="sourcePoint" />
+            <mxPoint x="677.75" y="1185" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-11" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasSubject&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-12" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-9" target="0VjdX6la4yjrqGu_LaWB-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394.75" y="935" as="sourcePoint" />
+            <mxPoint x="394.75" y="995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-13" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isComposedOf&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-14" value="&lt;b&gt;Explanation ODP&lt;br&gt;&lt;/b&gt;http://ontologydesignpatterns.org/wiki/Submissions:ExplanationODP&lt;br style=&quot;font-size: 9px;&quot;&gt;MusicContent is the explanandum, that is explained by the Analysis (Explanans) based on a specific theory (AnalyticialReference subClassOf dul:Theory) &lt;br&gt;&lt;b&gt;mportant assumption: &lt;/b&gt;whenever an analysis is performed it needs ALWAYS an explicit AnalyticalReference (even in Open World assumption). If a theory is not present, then we can use an ImplicitTheory (subClassOf AnalyticalReference) that does not clash with a theory added later." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;arcSize=3;verticalAlign=bottom;align=left;fontStyle=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="280" y="740" width="700" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-15" value="mm:MusicContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="297" y="755" width="136" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-16" value="mr:Analysis" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="563" y="755" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-17" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-15" target="0VjdX6la4yjrqGu_LaWB-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="718.5" y="1105" as="sourcePoint" />
+            <mxPoint x="718.5" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-18" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isAnalysedIn&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-19" value="mr:AnalyticalReference" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="803.5" y="755" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-20" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-16" target="0VjdX6la4yjrqGu_LaWB-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="452.5" y="835" as="sourcePoint" />
+            <mxPoint x="452.5" y="745" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="659" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-21" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isBasedOn&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-22" value="mr:Analysis" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="291.75" y="1010" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-23" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-22" target="0VjdX6la4yjrqGu_LaWB-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="411.75" y="825" as="sourcePoint" />
+            <mxPoint x="671.75" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-24" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isAnnotatedIn&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-25" value="mr:Annotation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="585.75" y="1010" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-26" value="mm:MusicContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="295" y="1420" width="136" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-27" value="mr:Annotation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="583" y="1420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-28" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-26" target="0VjdX6la4yjrqGu_LaWB-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="19" y="2045" as="sourcePoint" />
+            <mxPoint x="-51" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-29" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isAnnotatedIn&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-30" value="mm:MusicContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="291.75" y="1130" width="136" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-31" value="mr:Fragment" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="594.25" y="1130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-32" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-30" target="0VjdX6la4yjrqGu_LaWB-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520.25" y="1090" as="sourcePoint" />
+            <mxPoint x="470.25" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-33" value="&lt;span style=&quot;font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mm:hasFragment&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;rotation=0;fontColor=#000080;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-34" value="mr:Fragment" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="1720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-35" value="core:MusicTimeInterval" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="634" y="1720" width="166" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-36" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-34" target="0VjdX6la4yjrqGu_LaWB-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="2040" as="sourcePoint" />
+            <mxPoint x="400" y="2070" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-37" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;core:hasMusicTimeInterval&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;rotation=0;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-38" value="mr:MusicNotation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="315.5" y="1240" width="137" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-39" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;curved=1;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-38" target="0VjdX6la4yjrqGu_LaWB-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="393.75" y="1190" as="sourcePoint" />
+            <mxPoint x="393.75" y="1250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420.75" y="1320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-40" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isComposedOf&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-41" value="mr:Annotation" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="553.5" y="1580" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-42" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-41" target="0VjdX6la4yjrqGu_LaWB-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="573.5" y="1630" as="sourcePoint" />
+            <mxPoint x="639.5" y="1730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-43" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:hasAnnotator&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-44" value="core:Agent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="286.25" y="1580" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-45" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-41" target="0VjdX6la4yjrqGu_LaWB-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="699.5" y="1610" as="sourcePoint" />
+            <mxPoint x="909.5" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-46" value="mr:hasAnnotationContent" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;fontColor=#000080;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-47" value="mr:AnnotationContent" style="graphMlID=n4;shape=rect;rounded=1;arcsize=30;fillColor=#FFF344;strokeColor=#000000;strokeWidth=1.0;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="870.5" y="1580" width="166.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-48" value="" style="graphMlID=e0;rounded=0;endArrow=block;strokeColor=#000080;strokeWidth=1.0;startArrow=oval;startFill=1;endFill=1;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;edgeStyle=orthogonalEdgeStyle;curved=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0VjdX6la4yjrqGu_LaWB-41" target="0VjdX6la4yjrqGu_LaWB-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="683.5" y="1600" as="sourcePoint" />
+            <mxPoint x="673.5" y="1620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="583.5" y="1550" />
+              <mxPoint x="643.5" y="1550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VjdX6la4yjrqGu_LaWB-49" value="&lt;span style=&quot;color: rgb(0, 0, 128); font-size: 13px; background-color: rgb(248, 249, 250);&quot;&gt;mr:isBasedOn&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontFamily=proxima nova;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3Dproxima%2Bnova;fontSize=13;" connectable="0" vertex="1" parent="0VjdX6la4yjrqGu_LaWB-48">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -5,12 +5,16 @@ Fragments of a musical object -- elements of a musical object whose temporal loc
 An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
 Each annotation describes some music content (e.g. notes, chords, etc.), which we refer to as a musical projection, and can be composed hierarchically. 
 
+![Ontology diagram](diagrams/music_representation.png "Music Representation Ontology Diagram")
+
 The ontology re-uses the [Music Annotation Pattern](https://github.com/andreamust/music-annotation-pattern) [1] and is aligned to:
 * JAMS ontology [2]
 * Music Note Ontology [3] (*the ontology defines domain and range axioms, a modified version that is consistent with this module is provided in ontology/music_note_refactor.owl*)
 * Music Note Ontology [4]
 * Music OWL [5]
 
+## Design methodology
+The ontology follows the [eXtreme Design](http://extremedesign.info/) methodology for ontology development. A set of competency questions have been extracted from similar works and are listed below, alongside their provenance.
 
 | ID | Competency question                                                                                       | Reference               |
 |----|-----------------------------------------------------------------------------------------------------------|-------------------------|
@@ -25,6 +29,11 @@ The ontology re-uses the [Music Annotation Pattern](https://github.com/andreamus
 | 9  | Which are the fragments of a piece that use the note(s) X and duration(s) Y?                              | MusicOWL [5]            |
 | 10 | Which are the fragments of a piece that use the note(s) X and duration(s) Y distributed over Z measures?  | MusicOWL [5]            |
 | 11 | Which are the compositions containing chords composed of X notes?                                         | MusicOWL [5]            |
+
+The ontology development reuses estabilished Ontology Design Patterns, which can be found at [ontologydesignpatterns.org](ontologydesignpatterns.org/) and are described in the figure below.
+
+![ODPs diagram](diagrams/used_odps.png "ODPs used in the Ontology")
+
 
 
 ## References
