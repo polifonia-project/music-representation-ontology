@@ -5,7 +5,7 @@ Fragments of a musical object -- elements of a musical object whose temporal loc
 An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
 Each annotation describes some music content (e.g. notes, chords, etc.), which we refer to as a musical projection, and can be composed hierarchically. 
 
-![Ontology diagram](diagrams/music_representation.png "Music Representation Ontology Diagram")
+![music-representation-annotation drawio](https://github.com/polifonia-project/music-representation-ontology/assets/44606182/19492ea8-02f2-48ae-92fa-b5d4ad1ce575)
 
 The ontology re-uses the [Music Annotation Pattern](https://github.com/andreamust/music-annotation-pattern) [1] and is aligned to:
 * JAMS ontology [2]
