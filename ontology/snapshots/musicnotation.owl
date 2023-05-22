@@ -2,106 +2,35 @@
 <rdf:RDF xmlns="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"
      xml:base="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#">
-        <cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
-        <cc:license rdf:resource="http://opendatacommons.org/licenses/by/"/>
-        <cc:license rdf:resource="http://www.data.gouv.fr/Licence-Ouverte-Open-Licence"/>
-        <dc:contributor rdf:resource="http://chewbii.com"/>
-        <dc:contributor rdf:resource="http://deptinfo.cnam.fr/~rigaux/"/>
         <dc:contributor rdf:resource="https://people.irisa.fr/Virginie.Thion"/>
-        <dc:creator rdf:resource="http://cedric.cnam.fr/~hamdif"/>
         <dc:creator rdf:resource="http://cedric.cnam.fr/~sisaid"/>
-        <dc:description xml:lang="en">Music Notation Ontology.</dc:description>
-        <dc:description xml:lang="fr">Ontologie de la notation musicale.</dc:description>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-03</dc:issued>
         <dc:publisher rdf:resource="http://fr.dbpedia.org/resource/Conservatoire_national_des_arts_et_métiers"/>
-        <dc:rights>Copyright 2016, CNAM</dc:rights>
-        <dc:title xml:lang="en">Music Notation Ontology</dc:title>
-        <vann:preferredNamespacePrefix>MusicNote</vann:preferredNamespacePrefix>
+        <dc:description xml:lang="fr">Ontologie de la notation musicale.</dc:description>
+        <dc:creator rdf:resource="http://cedric.cnam.fr/~hamdif"/>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-11-03</dc:issued>
+        <dc:contributor rdf:resource="http://deptinfo.cnam.fr/~rigaux/"/>
         <vann:preferredNamespaceUri rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"/>
+        <cc:license rdf:resource="http://www.data.gouv.fr/Licence-Ouverte-Open-Licence"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/2.0/"/>
         <owl:versionInfo>Version 1.0 - 2016-11-03</owl:versionInfo>
+        <vann:preferredNamespacePrefix>MusicNote</vann:preferredNamespacePrefix>
+        <dc:description xml:lang="en">Music Notation Ontology.</dc:description>
+        <dc:contributor rdf:resource="http://chewbii.com"/>
+        <cc:license rdf:resource="http://opendatacommons.org/licenses/by/"/>
+        <dc:title xml:lang="en">Music Notation Ontology</dc:title>
+        <dc:rights>Copyright 2016, CNAM</dc:rights>
     </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/rights -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
 
 
@@ -231,7 +160,10 @@
 
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+        <rdfs:range rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score"/>
+    </owl:ObjectProperty>
     
 
 
@@ -542,5 +474,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 
