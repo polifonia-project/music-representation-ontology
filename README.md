@@ -1,23 +1,23 @@
 # Music Representation Ontology
 
-An ontology to achieve interoperability of musical content.
+An ontology to achieve interoperability of annotation on made on musical content.
 
 [![DOI](https://zenodo.org/badge/372536364.svg)](https://zenodo.org/badge/latestdoi/372536364)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+> 🔗 Ontology URI: [https://w3id.org/polifonia/ontology/music-representation/](https://w3id.org/polifonia/ontology/music-representation/)
+
 The Music Representation ontology provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
 Fragments of a musical object -- elements of a musical object whose temporal location is uniquely identifiable -- are described by an annotation provided by an agent, that ranges from an expert annotator to an algorithm.
 An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
-Each annotation describes some music content (e.g. notes, chords, etc.), which we refer to as a musical projection, and can be composed hierarchically.
-Music Representation is part of the [Polifonia ontology network](https://github.com/polifonia-project/ontology-network).
+Each annotation describes some observation (e.g. notes, chords, etc.), whose content we refer to as a musical projection, and can be composed hierarchically.
 
-![music-representation-annotation drawio](https://github.com/polifonia-project/music-representation-ontology/assets/44606182/19492ea8-02f2-48ae-92fa-b5d4ad1ce575)
+![music-representation-annotation drawio](diagrams/music_representation.png)
 
-The ontology re-uses the [Music Annotation Pattern](https://github.com/andreamust/music-annotation-pattern) [1] and is aligned to the following ontologies:
-* JAMS ontology [2]
-* Music Note Ontology [3] (*the ontology defines domain and range axioms, a modified version that is consistent with this module is provided in ontology/music_note_refactor.owl*)
-* Music Note Ontology [4]
-* Music OWL [5]
+### Ontology design patterns used
+The ontology development reuses estabilished Ontology Design Patterns (ODPs), which can be found at [ontologydesignpatterns.org](ontologydesignpatterns.org/) and are described in the figure below. Each ODP is defined in the PON [core module](https://w3id.org/polifonia/ontology/core/).
+
+![ODPs diagram](diagrams/used_odps.png "ODPs used in the Ontology")
 
 ## Competency questions addressed
 The ontology follows the [eXtreme Design](http://extremedesign.info/) methodology for ontology development. A set of competency questions have been extracted from similar works and are listed below, alongside their provenance.
@@ -36,10 +36,24 @@ The ontology follows the [eXtreme Design](http://extremedesign.info/) methodolog
 | 10 | Which are the fragments of a piece that use the note(s) X and duration(s) Y distributed over Z measures?  | MusicOWL [5]            |
 | 11 | Which are the compositions containing chords composed of X notes?                                         | MusicOWL [5]            |
 
-The ontology development reuses estabilished Ontology Design Patterns, which can be found at [ontologydesignpatterns.org](ontologydesignpatterns.org/) and are described in the figure below.
+## Imported ontologies
 
-![ODPs diagram](diagrams/used_odps.png "ODPs used in the Ontology")
+### Direct imports
+- [Core](https://w3id.org/polifonia/ontology/core)
+- [Music Annotation Pattern](https://github.com/andreamust/music-annotation-pattern) [1]
+- [SKOS](https://www.w3.org/TR/skos-reference/)
 
+## Aligned ontologies
+- JAMS ontology [2]
+- Music Note Ontology [3]
+- Music Note Ontology [4]
+- Music OWL [5]
+
+## Statistics
+- number of classes: 78 
+- number of object properties: 123
+- number of datatype properties: 16
+- number of logical axioms: 433
 
 ## License
 
