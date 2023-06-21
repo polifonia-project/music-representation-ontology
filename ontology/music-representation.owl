@@ -21,8 +21,8 @@
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
-        <owl:imports rdf:resource="https://purl.org/andreapoltronieri/music-notation-pattern"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="https://purl.org/andreapoltronieri/music-notation-pattern"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
         <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
@@ -198,7 +198,7 @@ The generality of this ontology and its abstraction over the represented content
     <!-- https://w3id.org/polifonia/ontology/music-representation/hasAnnotationType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotationType">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationTypeOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
@@ -224,7 +224,7 @@ The generality of this ontology and its abstraction over the represented content
     <!-- https://w3id.org/polifonia/ontology/music-representation/hasAnnotatorType -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasAnnotatorType">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/classifies"/>
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/isClassifiedBy"/>
         <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatorTypeOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
@@ -360,8 +360,8 @@ The generality of this ontology and its abstraction over the represented content
     <!-- https://w3id.org/polifonia/ontology/music-representation/isAnnotationTypeOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isAnnotationTypeOf">
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotationType"/>
+        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotationType"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
         <rdfs:comment xml:lang="en">The relationship that defines an annotation of specific type.</rdfs:comment>
         <rdfs:label xml:lang="en">is annotation type of</rdfs:label>
     </owl:ObjectProperty>
@@ -720,14 +720,7 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasObservation"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Observation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasObservation"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Observation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -972,8 +965,8 @@ E.g. a chord.</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence">
-        <rdfs:label xml:lang="en">has confidence</rdfs:label>
         <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">has confidence</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
