@@ -38,8 +38,7 @@ bibliography:
 - deliverable-document:
 ---
 
-# My Ontology in PON
-
+# Music Representation Ontology
 The [Music Representation Ontology](https://github.com/polifonia-project/music-representation-ontology) provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
 Fragments of a musical object -- elements of a musical object whose temporal location is uniquely identifiable -- are described by an annotation provided by an agent, that ranges from an expert annotator to an algorithm.
 An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
