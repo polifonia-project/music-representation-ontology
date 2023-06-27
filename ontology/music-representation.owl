@@ -22,7 +22,6 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <owl:imports rdf:resource="https://purl.org/andreapoltronieri/music-notation-pattern"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
         <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
@@ -278,7 +277,7 @@ The generality of this ontology and its abstraction over the represented content
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasTemporalLocation">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
-        <rdfs:range rdf:resource="http://purl.org/andreapoltronieri/music-annotation-pattern/MusicTimeInterval"/>
+        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/core/MusicTimeInterval"/>
         <rdfs:comment xml:lang="en">The temporal location of a fragment.</rdfs:comment>
         <rdfs:label xml:lang="en">has temporal location</rdfs:label>
     </owl:ObjectProperty>
@@ -965,8 +964,8 @@ E.g. a chord.</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence">
-        <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">has confidence</rdfs:label>
+        <rdfs:comment xml:lang="en">The confidence of an analysis.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

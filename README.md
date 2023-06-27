@@ -32,9 +32,146 @@ The ontology follows the [eXtreme Design](http://extremedesign.info/) methodolog
 | 6  | Which are the accidental of the notes present in a score part?                                            | Music Note Ontology [4] |
 | 7  | Which are the fragments of a piece that are of a duration(s) X?                                           | MusicOWL [5]            |
 | 8  | Which are the fragments of a piece that use the note(s) X?                                                | MusicOWL [5]            |
-| 9  | Which are the fragments of a piece that use the note(s) X and duration(s) Y?                              | MusicOWL [5]            |
-| 10 | Which are the fragments of a piece that use the note(s) X and duration(s) Y distributed over Z measures?  | MusicOWL [5]            |
-| 11 | Which are the compositions containing chords composed of X notes?                                         | MusicOWL [5]            |
+| 9  | Which are the fragments of a piece that use the note(s) X with duration(s) Y?                             | MusicOWL [5]            |
+| 10 | Which are the compositions containing chords composed of X notes?                                         | MusicOWL [5]            |
+
+## Examples of SPARQL queries
+
+CQ5 - Assuming a performance ?X and a note ?note
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX core-res: <https://w3id.org/polifonia/resource/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+
+SELECT ?fragment
+WHERE { 
+  BIND(<Perfomance music entity> as ?X ) .
+  BIND(<Note> as ?note ) .
+  
+  ?annotation mr:describes ?fragment ;
+              mr:hasObservation [ mr:hasSubject ?note ] .
+    
+  ?fragment mr:hasTemporalLocation [
+    core:hasMusicTimeDuration [
+      core:hasValue ?value ;
+      core:hasValueType core-res:seconds
+    ]
+  ] .
+
+}
+```
+
+CQ6 - Assuming a score part staring at ?x and ending at ?y
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+
+SELECT ?subj
+WHERE { 
+  BIND(<Starting time index> as ?s ) .
+  BIND(<Ending time index> as ?y ) .
+  
+  ?p mr:hasFragment ?fragment .
+  
+  ?fragment mr:hasTemporalLocation [
+    core:hasStartMusicTimeIndex ?x ;
+    core:hasEndMusicTimeIndex ?y
+  ] .
+
+  ?annotation mr:described ?fragment ;
+              mr:hasObservation [ mr:hasSubject ?subj ] .
+  ?subj a mp:Accidental .
+}
+```
+
+CQ7 - Assuming an arbitrary piece ?p and an arbitrary duration ?X
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+
+SELECT ?fragment
+WHERE { 
+  BIND(<Music piece> as ?p ) .
+  BIND(<Target duration> as ?X ) .
+
+  ?p mr:hasFragment ?fragment .
+  
+  ?fragment mr:hasTemporalLocation [
+    core:hasMusicTimeDuration [
+      core:hasValue ?X
+    ]
+  ]
+}
+```
+
+CQ8 - Assuming an arbitrary piece ?p and an arbitrary note ?note
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+PREFIX mp: <https://w3id.org/polifonia/ontology/music-projection/>
+
+SELECT ?fragment
+WHERE { 
+  BIND(<Music piece> as ?p ) .
+  BIND(<Music note> as ?note ) .
+
+  { ?p mr:hasAnnotation ?annotation }
+  UNION
+  { ?p mr:isAnalysedIn [ mr:hasAnnotation ?annotation ]}
+
+  ?annotation mr:hasObservation [ mr:hasSubject ?note ] ;
+              mr:described ?fragment .
+}
+```
+
+CQ9 - Assuming an arbitrary piece ?p and an arbitrary note ?note with duration ?d.
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+PREFIX mp: <https://w3id.org/polifonia/ontology/music-projection/>
+
+SELECT ?fragment
+WHERE { 
+  BIND(<Music piece> as ?p ) .
+  BIND(<Music note> as ?note ) .
+  BIND(<Duration> as ?d ) .
+
+  { ?p mr:hasAnnotation ?annotation }
+  UNION
+  { ?p mr:isAnalysedIn [ mr:hasAnnotation ?annotation ]}
+
+  ?annotation mr:hasObservation [ mr:hasSubject ?note ] ;
+              mr:described ?fragment .
+
+  ?fragment mr:hasTemporalLocation [
+    core:hasMusicTimeDuration [
+      core:hasValue ?d
+    ]
+  ] .
+}
+```
+
+CQ10 - Assuming an arbitrary number of notes ?n
+```
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+PREFIX mp: <https://w3id.org/polifonia/ontology/music-projection/>
+
+SELECT ?chord
+WHERE { 
+  BIND(<Music piece> as ?p ) .
+  
+  { ?p mr:hasAnnotation ?annotation }
+  UNION
+  { ?p mr:isAnalysedIn [ mr:hasAnnotation ?annotation ] }
+
+  ?annotation mr:hasObservation [ mr:hasSubject ?chord ] .
+  ?chord a mp:Chord ;
+         mp:isComposedOf ?chordNote .
+}
+GROUP BY ?chord
+HAVING (COUNT(?chordNote) = ?n)
+```
 
 ## Imported ontologies
 
@@ -53,7 +190,7 @@ The ontology follows the [eXtreme Design](http://extremedesign.info/) methodolog
 - number of classes: 78 
 - number of object properties: 123
 - number of datatype properties: 16
-- number of logical axioms: 433
+- number of logical axioms: 432
 
 ## License
 
