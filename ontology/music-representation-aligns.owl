@@ -3,12 +3,18 @@
      xml:base="https://w3id.org/polifonia/ontology/music-representation/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:map="http://purl.org/andreapoltronieri/music-annotation-pattern/"
+     xmlns:mn1="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"
+     xmlns:mso="http://linkeddata.uni-muenster.de/ontology/musicscore#"
+     xmlns:mto="http://purl.org/ontology/mto/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:core="https://w3id.org/polifonia/ontology/core/"
+     xmlns:jams="http://w3id.org/polifonia/ontology/jams/"
      xmlns:meta="https://w3id.org/polifonia/ontology/music-meta/"
+     xmlns:opla="http://ontologydesignpatterns.org/opla/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
@@ -16,7 +22,13 @@
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
+        <owl:imports rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"/>
+        <owl:imports rdf:resource="http://linkeddata.uni-muenster.de/ontology/musicscore#1.0.0"/>
+        <owl:imports rdf:resource="http://purl.org/ontology/mto/0.9"/>
+        <owl:imports rdf:resource="http://w3id.org/polifonia/ontology/jams/1.0/"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <owl:imports rdf:resource="https://purl.org/andreapoltronieri/notepattern/"/>
+        <owl:imports rdf:resource="https://purl.org/andreapoltronieri/scorepart/"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
         <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
@@ -66,6 +78,94 @@ The generality of this ontology and its abstraction over the represented content
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/hasAnnotationType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/hasAnnotationType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/hasAnnotator -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/hasAnnotator">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/hasAnnotatorType -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/hasAnnotatorType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotatorType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/hasChordSubject -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/hasChordSubject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/hasSubject -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/hasSubject">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasSubject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/includesObservation -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/includesObservation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasObservation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/isAnnotationTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isAnnotationTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/isAnnotatorOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isAnnotatorOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotatorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/isAnnotatorTypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isAnnotatorTypeOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationTypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/isJAMSAnnotationOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isJAMSAnnotationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/isObservationOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/polifonia/ontology/jams/isObservationOf">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isAnnotationContentOf"/>
+    </owl:ObjectProperty>
     
 
 
@@ -366,6 +466,84 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Part">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Score">
+        <owl:equivalentClass rdf:resource="https://w3id.org/polifonia/ontology/music-meta/Score"/>
+    </owl:Class>
+    
+
+
+    <!-- http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice -->
+
+    <owl:Class rdf:about="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#Voice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Instant -->
+
+    <owl:Class rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Instant">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/MusicTimeInterval -->
+
+    <owl:Class rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/MusicTimeInterval"/>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/AnnotationType -->
+
+    <owl:Class rdf:about="http://w3id.org/polifonia/ontology/jams/AnnotationType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotationType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/AnnotatorType -->
+
+    <owl:Class rdf:about="http://w3id.org/polifonia/ontology/jams/AnnotatorType">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnnotatorType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/JAMSAnnotation -->
+
+    <owl:Class rdf:about="http://w3id.org/polifonia/ontology/jams/JAMSAnnotation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Annotation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/polifonia/ontology/jams/JAMSObservation -->
+
+    <owl:Class rdf:about="http://w3id.org/polifonia/ontology/jams/JAMSObservation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/andreapoltronieri/notepattern/Position -->
+
+    <owl:Class rdf:about="https://purl.org/andreapoltronieri/notepattern/Position">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Fragment"/>
+    </owl:Class>
     
 
 
@@ -718,15 +896,37 @@ E.g. a chord.</rdfs:comment>
     
 
 
+    <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#Score -->
+
+    <owl:NamedIndividual rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#Score"/>
+    
+
+
+    <!-- http://linkeddata.uni-muenster.de/ontology/musicscore#ScorePart -->
+
+    <owl:NamedIndividual rdf:about="http://linkeddata.uni-muenster.de/ontology/musicscore#ScorePart"/>
+    
+
+
+    <!-- http://purl.org/andreapoltronieri/music-annotation-pattern/hasConfidence -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/andreapoltronieri/music-annotation-pattern/hasConfidence"/>
+    
+
+
     <!-- https://w3id.org/polifonia/ontology/music-meta/Score -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-meta/Score"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-meta/Score">
+        <skos:relatedMatch rdf:resource="http://linkeddata.uni-muenster.de/ontology/musicscore#Score"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- https://w3id.org/polifonia/ontology/music-meta/ScorePart -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-meta/ScorePart"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-meta/ScorePart">
+        <skos:relatedMatch rdf:resource="http://linkeddata.uni-muenster.de/ontology/musicscore#ScorePart"/>
+    </owl:NamedIndividual>
     
 
 
@@ -756,7 +956,9 @@ E.g. a chord.</rdfs:comment>
 
     <!-- https://w3id.org/polifonia/ontology/music-representation/hasConfidence -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence"/>
+    <owl:NamedIndividual rdf:about="https://w3id.org/polifonia/ontology/music-representation/hasConfidence">
+        <skos:related rdf:resource="http://purl.org/andreapoltronieri/music-annotation-pattern/hasConfidence"/>
+    </owl:NamedIndividual>
     
 
 
