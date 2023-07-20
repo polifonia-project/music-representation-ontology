@@ -1,4 +1,4 @@
-<img src="diagrams/logo.png" alt="Music Representation Logo" width="300" height="150"/>
+<img src="./assets/logo.png" alt="Music Representation Logo" width="300" height="150"/>
 
 # Music Representation Ontology
 
