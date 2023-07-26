@@ -19,7 +19,7 @@
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/1.0/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
-        <dc:issued xml:lang="en">07/20/2023</dc:issued>
+        <dc:issued xml:lang="en">20/07/2023</dc:issued>
         <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
         <terms:creator xml:lang="en">Nicolas Lazzari</terms:creator>
         <terms:description xml:lang="en">The Music Representation Ontology provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
