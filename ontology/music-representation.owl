@@ -15,10 +15,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation">
+    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
-        <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/"/>
+        <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/1.0/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
+        <dc:issued xml:lang="en">07/20/2023</dc:issued>
         <terms:creator xml:lang="en">Andrea Poltronieri</terms:creator>
         <terms:creator xml:lang="en">Nicolas Lazzari</terms:creator>
         <terms:description xml:lang="en">The Music Representation Ontology provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
@@ -28,10 +29,9 @@ Each annotation describes some music content (e.g. notes, chords, etc.), a music
 
 The generality of this ontology and its abstraction over the represented content enables the interoperability of different music annotation schemas. The module is aligned to MusicOWL, Music Notation Ontology, JAMS ontology and Music Note Ontology.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <terms:title xml:lang="en">07/20/2023</terms:title>
         <terms:title xml:lang="en">Music Representation Ontology</terms:title>
         <vann:preferredNamespacePrefix>mr:</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/polifonia/ontology/music-representation"/>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/polifonia/ontology/music-representation/"/>
         <rdfs:comment xml:lang="en">The Music Representation Ontology provides a comprehensive schema to describe the analysis of musical objects (a score, an audio track, etc.) interpreted in the context of an existing theory.
 Fragments of a musical object -- elements of a musical object whose temporal location is uniquely identifiable -- are described by an annotation provided by an agent, that ranges from an expert annotator to an algorithm.
 An annotation is either the subjective result of an analysis (e.g. the chord played in a specific section) or objective (e.g. a note in a digital score).
