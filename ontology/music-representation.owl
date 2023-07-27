@@ -15,7 +15,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
+    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/1.0/"/>
         <dc:creator>Jacopo De Bernardinis</dc:creator>
