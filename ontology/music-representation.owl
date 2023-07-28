@@ -30,7 +30,7 @@ Each annotation describes some music content (e.g. notes, chords, etc.), a music
 
 The generality of this ontology and its abstraction over the represented content enables the interoperability of different music annotation schemas. The module is aligned to MusicOWL, Music Notation Ontology, JAMS ontology and Music Note Ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <terms:issued xml:lang="en">20/07/2023</terms:issued>
+        <dcterms:issued xml:lang="en">20/07/2023</dcterms:issued>
         <dcterms:modified xml:lang="en">28/07/2023</dcterms:modified>
         <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="en">Music Representation Ontology</dcterms:title>
