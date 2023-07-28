@@ -16,6 +16,7 @@
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
+        <rdf:type rdf:resource="http://purl.org/vocab/vann/Vocabulary"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/1.0/"/>
         <ns:licence rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
@@ -29,6 +30,7 @@ Each annotation describes some music content (e.g. notes, chords, etc.), a music
 
 The generality of this ontology and its abstraction over the represented content enables the interoperability of different music annotation schemas. The module is aligned to MusicOWL, Music Notation Ontology, JAMS ontology and Music Note Ontology.</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <terms:issued xml:lang="en">20/07/2023</terms:issued>
         <dcterms:modified xml:lang="en">28/07/2023</dcterms:modified>
         <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="en">Music Representation Ontology</dcterms:title>

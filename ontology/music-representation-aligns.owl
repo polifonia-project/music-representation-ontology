@@ -24,7 +24,7 @@
      xmlns:mr-aligns="https://w3id.org/polifonia/ontology/music-representation-aligns/"
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation-aligns">
+    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation-aligns/">
         <rdf:type rdf:resource="http://purl.org/vocab/vann/Vocabulary"/>
         <owl:imports rdf:resource="http://cedric.cnam.fr/isid/ontologies/MusicNote.owl#"/>
         <owl:imports rdf:resource="http://linkeddata.uni-muenster.de/ontology/musicscore#1.0.0"/>
