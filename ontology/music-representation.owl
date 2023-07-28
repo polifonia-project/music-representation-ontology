@@ -365,31 +365,6 @@ The generality of this ontology and its abstraction over the represented content
     
 
 
-    <!-- https://w3id.org/polifonia/ontology/music-representation/isBasedOn -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isBasedOn">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/hasExplanans"/>
-        <owl:inverseOf rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isBasisOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnalyticalReference"/>
-        <rdfs:comment xml:lang="en">Relationship between an analysis and its analytical reference.</rdfs:comment>
-        <rdfs:label xml:lang="en">is based on</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/polifonia/ontology/music-representation/isBasisOf -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isBasisOf">
-        <rdfs:subPropertyOf rdf:resource="https://w3id.org/polifonia/ontology/core/hasExplanandum"/>
-        <rdfs:domain rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnalyticalReference"/>
-        <rdfs:range rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
-        <rdfs:comment xml:lang="en">Relationship between an analytical reference and an analysis based upon it.</rdfs:comment>
-        <rdfs:label xml:lang="en">is basis of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/polifonia/ontology/music-representation/isComposedOf -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/polifonia/ontology/music-representation/isComposedOf">
@@ -519,14 +494,14 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="https://w3id.org/polifonia/ontology/core/Explanation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/involvesMusicContent"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/core/isConceptualizedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/core/Agent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isBasedOn"/>
-                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnalyticalReference"/>
+                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/involvesMusicContent"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -551,12 +526,6 @@ E.g. a chord is composed of pitchclasses.</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/involvesMusicContent"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/MusicContent"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/isBasedOn"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/AnalyticalReference"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
