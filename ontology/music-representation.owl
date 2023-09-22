@@ -14,7 +14,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:explanation="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
-    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation/">
+    <owl:Ontology rdf:about="https://w3id.org/polifonia/ontology/music-representation">
         <owl:imports rdf:resource="https://w3id.org/polifonia/ontology/core/"/>
         <ns:licence rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:creator xml:lang="en">Andrea Poltronieri</dcterms:creator>
