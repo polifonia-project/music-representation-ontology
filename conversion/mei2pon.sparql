@@ -77,8 +77,9 @@ WHERE {
   BIND (fx:entity(res:, STRUUID()) AS ?scoreIRI)
   BIND (fx:entity(res:, STRUUID()) AS ?musicEntityIRI)
 
-  SERVICE <x-sparql-anything:file:///home/n28div/university/phd/pon/music-representation-ontology/conversion/examples/Aguado_Walzer_G-major.mei> { 
-	  fx:properties fx:media-type  "application/xml" .
+  SERVICE <x-sparql-anything:> { 
+	  fx:properties fx:location ?_path .
+    fx:properties fx:media-type  "application/xml" .
 
     ?staff a mei:staffDef ;
            xyz:n ?staffIdNum .
