@@ -1,0 +1,131 @@
+# TODO: Handle time signature, midi instrument, key signature from staffDef
+
+PREFIX fx: <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz: <http://sparql.xyz/facade-x/data/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+PREFIX mei: <http://www.music-encoding.org/ns/mei#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace#>
+
+PREFIX res: <http://my-resource-iri/>
+
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX mr: <https://w3id.org/polifonia/ontology/music-representation/>
+PREFIX mp: <https://w3id.org/polifonia/ontology/music-projection/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+CONSTRUCT {
+  ?musicEntityIRI a mm:MusicEntity ;
+                  core:hasPart [ a mm:CompositionObject ;
+                                 mm:hasInstrumentation [ a mm:Instrumentation ;
+                                                         mm:hasScore ?scoreIRI
+                                 ]
+                  ] .
+
+  ?scoreIRI a mm:DigitalScore .
+
+  # handle the different score lines
+  ?scoreIRI mr:hasFragment ?staffIRI .
+  ?staffIRI a mr:Fragment ;
+            rdfs:label ?staffLabel ;
+            mr:hasTemporalLocation [ a core:MusicTimeInterval ; 
+                                     core:hasStartMusicTimeIndex core:Start ; 
+                                     core:hasEndMusicTimeIndex core:End ] .
+
+  ?measureIRI a mr:Annotation ;
+              mr:describesFragment ?measureFragmentIRI .
+              
+  ?measureFragmentIRI a mr:Fragment ; 
+                      core:isPartOf ?staffIRI ;
+                      mr:hasTemporalLocation [ 
+                        a core:MusicTimeInterval ;
+                        # Start index
+                        core:hasStartMusicTimeIndex [
+                          a core:MusicTimeIndex ;
+                          core:hasMusicTimeIndexComponent [ a core:MusicTimeIndexComponent ; core:hasValue ?measureIdNum ; core:hasValueType core:Measure ]
+                        ] ;
+                        # Duration
+                        core:hasMusicTimeDuration [ a core:MusicTimeDuration ; core:hasValue "1" ; core:hasValueType core:Measure ]
+                      ] .
+  
+  ?noteAnnotationIRI a mr:Annotation ;
+                     core:isDerivedFrom ?measureIRI ;
+                      mr:describesFragment [ 
+                        a mr:Fragment ; 
+                        core:isPartOf ?measureFragmentIRI ;
+                        mr:hasTemporalLocation [ 
+                          a core:MusicTimeInterval ;
+                          # Start index
+                          core:hasStartMusicTimeIndex [
+                            a core:MusicTimeIndex ;
+                            core:hasMusicTimeIndexComponent [ a core:MusicTimeIndexComponent ; core:hasValue ?notePosition ; core:hasValueType core:Index ]
+                        ] ;
+                        # Duration
+                        core:hasMusicTimeDuration [ a core:MusicTimeDuration ; core:hasValue ?noteDurationIRI ; core:hasValueType core:Beat ]
+                      ]
+                     ] ;
+                     mr:hasObservation [ 
+                      mr:hasSubject [
+                        a mp:Note ;
+                        mp:hasPitch [ a mp:Pitch ; mp:hasPitchClass ?notePitchClassIRI ; mp:hasOctave ?pitchOctave ] ;
+                        mp:hasDuration ?noteDurationIRI ;
+                        mp:hasAccidental ?noteAccidentalIRI ]
+                     ] .
+}
+WHERE {
+  BIND (fx:entity(res:, STRUUID()) AS ?scoreIRI)
+  BIND (fx:entity(res:, STRUUID()) AS ?musicEntityIRI)
+
+  SERVICE <x-sparql-anything:file:///home/n28div/university/phd/pon/music-representation-ontology/conversion/examples/Aguado_Walzer_G-major.mei> { 
+	  fx:properties fx:media-type  "application/xml" .
+
+    ?staff a mei:staffDef ;
+           xyz:n ?staffIdNum .
+    OPTIONAL {
+      ?staff fx:anySlot* [ a mei:label ; fx:anySlot ?staffLabel ]
+    }
+      
+    ?measure a mei:measure ;
+             xyz:n ?measureIdNum .
+
+    # TODO: Handle chord
+    ?measure fx:anySlot* [ a mei:staff ; xyz:n ?staffIdNum ; fx:anySlot* [ ?noteMember ?note ]] .
+      # bind the note position within the measure
+    ?note a mei:note ;
+          xyz:pname ?notePitchClass ;
+          xyz:dur ?noteDuration ;
+          xyz:oct ?pitchOctave .
+    BIND (fx:cardinal(?noteMember) AS ?notePosition)
+    
+    OPTIONAL { ?note xyz:accidental ?noteAccidental }
+	}
+
+  # Map values for pitch classes
+  VALUES (?notePitchClassIRI ?notePitchClass) { 
+    (mp:A "a") (mp:B "b") (mp:C "c") (mp:D "d") (mp:E "e") (mp:F "f") (mp:G "g")
+  }
+
+  # Map values for durations
+  VALUES (?noteDurationIRI ?noteDuration) {
+    (mp:Long "long") (mp:Breve "breve") (mp:Whole "1")
+    (mp:Half "2") (mp:Quarter "4") (mp:Eighth "8")
+    (mp:Sixteenth "16") (mp:32th "32") (mp:64th "64")
+    (mp:128th "128") (mp:256th "256") (mp:512th "512")
+    (mp:1024th "1024") (mp:2048th "2048")
+  }
+
+  # Map values for durations
+  VALUES (?noteAccidentalIRI ?noteAccidental) {
+    (mp:Sharp "s") (mp:Flat "f") (mp:DoubleSharp "ss")
+    (mp:DoubleSharp "x") (mp:TripleSharp "xs") (mp:TripleSharp "sx")
+    (mp:TripleSharp "ts") (mp:DoubleFlat "ff") (mp:TripleFlat "tf")
+    (mp:Natural "n")
+  }
+
+  BIND (fx:entity(?scoreIRI, "/", "staff", "/", ?staffIdNum) AS ?staffIRI)
+  BIND (fx:entity(?staffIRI, "/", "measure", "/", ?measureIdNum) AS ?measureIRI)
+  BIND (fx:entity(?measureIRI, "/", ?measureIdNum, "/", STRUUID()) AS ?measureFragmentIRI)
+  # IRI for the annotation of a specific note
+  BIND (fx:entity(?measureIRI, "/", "annotation", "/", STRUUID()) AS ?noteAnnotationIRI)
+}
