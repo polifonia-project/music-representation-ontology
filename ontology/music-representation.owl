@@ -26,8 +26,8 @@ An annotation is either the subjective result of an analysis (e.g. the chord pla
 Each annotation describes some music content (e.g. notes, chords, etc.), a musical projection, and can be composed hierarchically. The Music Representation Ontology reuses the Music Annotation Pattern ODP to implement an annotation.
 
 The generality of this ontology and its abstraction over the represented content enables the interoperability of different music annotation schemas. The module is aligned to MusicOWL, Music Notation Ontology, JAMS ontology and Music Note Ontology.</dcterms:description>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:issued xml:lang="en">20/07/2023</dcterms:issued>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:modified xml:lang="en">28/07/2023</dcterms:modified>
         <dcterms:rights rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:title xml:lang="en">Music Representation Ontology</dcterms:title>
@@ -93,6 +93,18 @@ The generality of this ontology and its abstraction over the represented content
     
 
 
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
@@ -114,6 +126,12 @@ The generality of this ontology and its abstraction over the represented content
     <!-- http://purl.org/dc/terms/rights -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -739,6 +757,15 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
     <!-- https://w3id.org/polifonia/ontology/music-representation/MusicContent -->
 
     <owl:Class rdf:about="https://w3id.org/polifonia/ontology/music-representation/MusicContent">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/AbstractScore"/>
+                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/Recording"/>
+                    <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/Score"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/polifonia/ontology/music-representation/hasAnnotation"/>
@@ -757,11 +784,6 @@ An example is Riemann&apos;s theory or Schenker&apos;s theory.</rdfs:comment>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/polifonia/ontology/music-representation/Analysis"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/AbstractScore"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/Recording"/>
-            <rdf:Description rdf:about="https://w3id.org/polifonia/ontology/music-meta/Score"/>
-        </owl:disjointUnionOf>
         <rdfs:comment xml:lang="en">Music content represents a musical piece that can be analysed by means of an analytical process.</rdfs:comment>
         <rdfs:label xml:lang="en">Music content</rdfs:label>
     </owl:Class>
