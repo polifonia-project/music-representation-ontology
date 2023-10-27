@@ -3,8 +3,8 @@ component-id: https://w3id.org/polifonia/ontology/music-representation/
 type: Ontology
 name: Music Representation Ontology
 description: An ontology to achieve interoperability of annotation made on musical content.
-image: diagrams/music_representation.png
-logo: assets/logo.png
+image: https://github.com/polifonia-project/music-representation-ontology/raw/main/diagrams/music_representation.png
+logo: https://github.com/polifonia-project/music-representation-ontology/raw/main/assets/logo.png
 work-package:
 - WP2
 pilot:
@@ -13,12 +13,12 @@ project: polifonia-project
 resource: ontology/music-representation.owl
 release-date: 27/06/2023
 release-number: v1.0
-release-link: https://github.com/polifonia-project/music-representation-ontology/tag/v1.0
+release-link: https://github.com/polifonia-project/ontology-network/releases/tag/v1.0
 doi: 10.5281/zenodo.7919970
-changelog: https://github.com/polifonia-project/music-representation-ontology/tag/v1.0
+changelog: https://github.com/polifonia-project/ontology-network/releases/tag/v1.0
 licence:
 - CC-BY_v4
-copyright: "Copyright (c) 2023 Andrea Poltronieri, Nicolas Lazzari, Jacopo De Bernardinis"
+copyright: "Copyright (c) 2023 Andrea Poltronieri, Nicolas Lazzari, Jacopo de Berardinis"
 contributors:
 - Andrea Poltronieri <https://github.com/andreamust>
 - Nicolas Lazzari <https://github.com/n28div>
@@ -28,14 +28,6 @@ related-components:
   - polifoniacq-dataset
 - reuses:  
   - https://w3id.org/polifonia/ontology/core/
-- extends: 
-- story:
-- persona:
-- documentation:
-bibliography:
-- main-publication:
-- publication:
-- deliverable-document:
 ---
 
 # Music Representation Ontology
